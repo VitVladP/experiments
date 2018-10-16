@@ -1,0 +1,64 @@
+server:
+  port: 8887
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          searchPaths: application,api
+          uri: git@github.com:VitVladP/properties.git
+          hostKey: someHostKey
+          private-key:  |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+          skip-ssl-validation: true
